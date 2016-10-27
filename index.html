@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="pintage">
+  <head>
+    <meta charset="utf-8">
+    <title>Pintage</title>
+    <link rel="stylesheet" href="/css/style.css" charset="utf-8">
+    <script src="/js/app.js" charset="utf-8"></script>
+    <base href="/" />
+    <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
+  </head>
+  <body ng-controller="mainCtrl as main">
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="home">Pintage</a></li>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li ng-hide="main.user">
+                <a ui-sref="register">Register</a>
+              </li>
+              <li ng-hide="main.user">
+                <a ui-sref="login">Login</a>
+              </li>
+              <li ng-show="main.user">
+                <a href="#" ng-click="main.logout()">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container" ui-view></main>
+  </body>
+</html>
