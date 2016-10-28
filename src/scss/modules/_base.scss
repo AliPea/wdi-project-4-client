@@ -1,6 +1,10 @@
 .container {
-  max-width: 414px;
-  max-height: 736px;
+  // max-width: 414px;
+  // max-height: 736px;
+}
+
+body {
+  font-family: "Roboto", cursive;
 }
 
 main {
@@ -9,4 +13,9 @@ main {
 
 form {
   text-align: left;
+
+}
+
+nav.navbar {
+  margin-bottom: 0px;
 }

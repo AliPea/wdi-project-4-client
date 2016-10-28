@@ -7,7 +7,7 @@ function registerCtrl(User, CurrentUserService){
   const vm    = this;
   vm.register = () => {
     User
-      .register({ user: vm.user })
+      .register(vm.user)
       .$promise
       .then(data => {
         const user = data.user ? data.user : null;
