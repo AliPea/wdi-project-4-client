@@ -1,14 +1,15 @@
 .jumbotron {
-  background-image: url("/images/drinks.jpg");
+  background-image: url("/images/pint.jpg");
   background-repeat: no-repeat;
-  background-position: center center fixed;
-  background-size: cover;
+  // background-position: center center fixed;
+  background-size: contain;
   color: $p_color;
   height: 1280px;
+  width: 100%;
   padding: 0;
   h1 {
     background-color: $h1_color;
-    opacity: 0.7;
+    opacity: 0.5;
     padding: 20px;
     width: 100%;
     margin-top: 0;

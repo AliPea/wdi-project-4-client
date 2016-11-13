@@ -5,9 +5,11 @@
     <li class="drinky" ng-repeat="drink in show.user.drinks">
       <h1>{{drink.name}}</h1>
         <ul class="drinksinfo">
-          <li>How many?: {{drink.quantity}}</li>
-          <li>Units?: {{drink.units}}</li>
-          <li>Price?:{{drink.price}}</li>
+          <li>Image: {{drink.image}}</li>
+          <li>Quantity: {{drink.quantity}}</li>
+          <li>Units: {{drink.units}}</li>
+          <li>Price: {{drink.price}}</li>
+          <li>Total Price: {{drink.price}}</li>
         </ul>
     </li>
   </ul>
@@ -21,11 +23,11 @@
         <form ng-submit="show.addDrink()">
           <div class="modal-body">
             <div class="form-group">
-              <label for="name">Name of drink</label>
+              <label for="name">Drink type</label>
               <input class="form-control" id="name" ng-model="show.drink.name">
             </div>
             <div class="form-group">
-              <label for="quantity">Number of drinks</label>
+              <label for="quantity">How many?</label>
               <input class="form-control" type="number" min="1" step="any" id="quantity" ng-model="show.drink.quantity">
             </div>
             <div class="form-group">
