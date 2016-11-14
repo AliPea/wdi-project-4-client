@@ -1,7 +1,7 @@
 .jumbotron {
-  background-image: url("/images/pint.jpg");
+  background-image: url("/images/cosmo.jpg");
   background-repeat: no-repeat;
-  // background-position: center center fixed;
+  background-position: center center fixed;
   background-size: contain;
   color: $p_color;
   height: 1280px;
@@ -9,16 +9,20 @@
   padding: 0;
   h1 {
     background-color: $h1_color;
-    opacity: 0.5;
+    opacity: 0.7;
     padding: 20px;
     width: 100%;
     margin-top: 0;
     filter: alpha(opacity=100);
     // border-radius: 5px 5px 0 0;
     font-size: 50px;
+    font-family: 'Lato', sans-serif;
   }
   p {
     color: $p_color;
+    font-weight: lighter;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
   }
 }
 a.btn {
