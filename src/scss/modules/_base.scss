@@ -7,6 +7,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+html, body, .ng-scope, .container-fluid, .row {
+  height: 100%;
+}
+
 main {
   text-align: center;
 }
