@@ -1,12 +1,53 @@
 <div class="jumbotron">
   <!-- <img src="..." class="img-responsive" alt="Responsive image"> -->
-    <h1>Having a drink?</h1>
-    <p>Keep track of your liver's demise</p>
-    <p ng-show="main.user">
-      <a class="btn btn-primary btn-lg" ui-sref="usersShow({ id: main.user.id })" role="button">Profile</a>
-    </p>
-    <p ng-hide="main.user">
-      <a class="btn btn-primary btn-lg" ui-sref="register" role="button">Register</a>
-      <a class="btn btn-primary btn-lg" ui-sref="login" role="button">Login</a>
-    </p>
+  <div id="hero">
+  <h1>Having a drink?</h1>
+  </div>
+  <p>Keep a tab on your liver's demise</p>
+  <p ng-show="main.user">
+    <a class="btn btn-primary btn-lg" ui-sref="usersShow({ id: main.user.id })" role="button">Profile</a>
+  </p>
+  <p ng-hide="main.user">
+    <a class="btn btn-primary btn-lg" ui-sref="register" role="button">Register</a>
+    <a class="btn btn-primary btn-lg" ui-sref="login" role="button">Login</a>
+  </p>
 </div>
+<section class="menu">
+  <h2>The COLLECTION...</h2>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <a href="https://www.meantimebrewing.com/" class="thumbnail">
+        <img src="/images/Meantime_logo.jpg" alt="meantime">
+      </a>
+      <a href="http://www.heritagebeverlyhills.com/" class="thumbnail">
+        <img src="/images/heritage.jpg" alt="heritage">
+      </a>
+      <a href="http://www.southerncomfort.com/en-uk/" class="thumbnail">
+        <img src="/images/southern_comfort.jpg" alt="southern_comfort">
+      </a>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <a href="http://www.beavertownbrewery.co.uk/home/" class="thumbnail">
+        <img src="/images/Beavertown.jpg" alt="beavertown">
+      </a>
+      <a href="https://uk.moet.com//" class="thumbnail">
+        <img src="/images/moet.jpg" alt="moet">
+      </a>
+      <a href="http://wildturkeybourbon.com/" class="thumbnail">
+        <img src="/images/wildturkey.jpg" alt="wildturkey">
+      </a>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <a href="http://www.camdentownbrewery.com/" class="thumbnail">
+        <img src="/images/camden.jpg" alt="camden">
+      </a>
+      <a href="http://www.chateaumontredon.com/en" class="thumbnail">
+        <img src="/images/redonwine.jpg" alt="redon">
+      </a>
+      <a href="https://uk.hendricksgin.com/" class="thumbnail">
+        <img src="/images/hendricks.jpg" alt="hendricks">
+      </a>
+    </div>
+    <h2>...and many more</h2>
+  </div>
+</section>
