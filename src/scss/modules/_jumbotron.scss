@@ -10,7 +10,7 @@
     padding: 17px;
     width: 100%;
     margin-top: 0;
-    background-color:rgba(211,211,211,0.2);
+    background-color: $jumbotron;
     h1 {
       font-family: 'Fredoka One', cursive;
       font-size: 70px;
@@ -23,6 +23,7 @@
     font-size: 40px;
   }
 }
+
 a.btn {
   width: 160px;
 }

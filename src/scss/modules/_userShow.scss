@@ -1,7 +1,18 @@
 .userShow {
+  background-image: url("/images/salut.jpg");
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size: cover;
+  background-position:center;
+  overflow: hidden;
   h1 {
-    font-size: 30px;
-    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    color: $jetgray;
+    background: $jumbotron;
+    font-family: 'Fredoka One', cursive;
+    margin-top: auto;
   }
   ul {
     padding: 0;
@@ -14,10 +25,10 @@
       display: inline-block;
       margin: 10px 10px;
       padding: 10px 20px;
-      background: #225560;
-      // width: 240px;
-      // height: 240px;
-      color: white;
+      background: $squares;
+      width: 160px;
+      height: 160px;
+      color: $black;
       ul.drinksinfo {
         text-align: center;
         li {
@@ -27,6 +38,4 @@
       }
     }
   }
-
-
 }

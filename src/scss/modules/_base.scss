@@ -53,14 +53,14 @@ nav.navbar {
 
 //**********************************************@extend
 // .message {
-//   border: 1px solid #ccc;
+//   border: 1px solid $white;
 //   padding: 10px;
-//   color: #333;
+//   color: $gray;
 // }
 //
 // .success {
 //   @extend .message;
-//   border-color: green;
+//   border-color: $green;
 // }
 //
 // .error {
