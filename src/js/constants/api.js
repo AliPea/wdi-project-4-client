@@ -1,3 +1,3 @@
 angular
   .module("pintage")
-  .constant("API", `http://localhost:3000/api`);
+  .constant("API", `https://pintage-backend.herokuapp.com/api`);
