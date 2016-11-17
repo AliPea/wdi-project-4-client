@@ -55161,7 +55161,7 @@ if (typeof jQuery === 'undefined') {
 })();
 
 "use strict";angular.module("pintage",["ui.router","ngResource","angular-jwt"]);
-"use strict";angular.module("pintage").constant("API","http://localhost:3000/api");
+"use strict";angular.module("pintage").constant("API","https://pintage-backend.herokuapp.com/api");
 "use strict";angular.module("pintage").factory("AuthInterceptor",AuthInterceptor);AuthInterceptor.$inject=["API","TokenService"];function AuthInterceptor(API,TokenService){return{request:function request(config){var token=TokenService.getToken();if(config.url.indexOf(API)===0&&token){config.headers.Authorization="Bearer "+token;}return config;},response:function response(res){if(res.config.url.indexOf(API)===0&&res.data.token){TokenService.setToken(res.data.token);}return res;}};}
 "use strict";angular.module("pintage").service("CurrentUserService",CurrentUserService);CurrentUserService.$inject=["$rootScope","TokenService"];function CurrentUserService($rootScope,TokenService){var currentUser=TokenService.decodeToken();return{user:currentUser,saveUser:function saveUser(user){currentUser=user;$rootScope.$broadcast("loggedIn");},getUser:function getUser(){return currentUser;},clearUser:function clearUser(){currentUser=null;TokenService.clearToken();$rootScope.$broadcast("loggedOut");}};}
 "use strict";angular.module("pintage").factory("Drink",drinkFactory);drinkFactory.$inject=["API","$resource"];function drinkFactory(API,$resource){return $resource(API+"/drinks/:id",{id:"@id"},{});}
